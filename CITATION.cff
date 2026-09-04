@@ -7,6 +7,7 @@ license: MIT
 type: software
 repository-code: "https://github.com/patrickblamas/rotorwave"
 url: "https://github.com/patrickblamas/rotorwave"
+doi: 10.5281/zenodo.22311180
 abstract: >-
   Open-source Python implementation of the wave analysis of rotors with
   longitudinal periodicity: Bloch-Floquet dispersion diagrams separated by
