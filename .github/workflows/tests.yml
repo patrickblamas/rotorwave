@@ -35,6 +35,6 @@ jobs:
         run: pytest -q
 
       - name: Reproduce one figure of the paper
-        run: python examples/fig04_dispersion_omega_k.py
+        run: python examples/dispersion_omega_k.py
         env:
           MPLBACKEND: Agg
