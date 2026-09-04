@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Testing and tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated output
+examples/figures/
+*.npz
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+
+# pasta temporaria: pode apagar a mao
+_APAGAR_ESTA_PASTA/

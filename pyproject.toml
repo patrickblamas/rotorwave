@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rotorwave"
+version = "1.0.0"
+description = "Wave propagation analysis of rotors with longitudinal periodicity"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "P. B. Lamas", email = "patrick.b.lamas@usp.br" },
+    { name = "R. Nicoletti", email = "rnicolet@sc.usp.br" },
+]
+keywords = [
+    "rotordynamics",
+    "wave propagation",
+    "band gap",
+    "periodic structures",
+    "Bloch-Floquet",
+    "wave finite element",
+    "finite element",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.6"]
+dev = [
+    "matplotlib>=3.6",
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/patrickblamas/rotorwave"
+Issues = "https://github.com/patrickblamas/rotorwave/issues"
+Paper = "https://doi.org/10.1016/j.jsv.2023.118095"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 92
+src = ["src", "tests", "examples"]
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "NPY"]
+# zip() is always used on sequences built together in this code base, and the
+# explicit strict= argument would only add noise.
+ignore = ["B905"]
+
+[tool.ruff.lint.per-file-ignores]
+# The examples import `_path_setup` first on purpose, so that they run from a
+# clone without installing the package; sorting the imports would break that.
+"examples/*.py" = ["I001", "E402"]
+"run_me.py" = ["I001", "E402"]

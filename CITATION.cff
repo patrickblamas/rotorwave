@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper it implements."
+title: "rotorwave: wave propagation analysis of rotors with longitudinal periodicity"
+version: 1.0.0
+date-released: 2026-09-02
+license: MIT
+type: software
+repository-code: "https://github.com/patrickblamas/rotorwave"
+url: "https://github.com/patrickblamas/rotorwave"
+abstract: >-
+  Open-source Python implementation of the wave analysis of rotors with
+  longitudinal periodicity: Bloch-Floquet dispersion diagrams separated by
+  whirl direction, band gap detection, wave-Campbell diagrams and the
+  directional frequency response of the finite rotor.
+authors:
+  - family-names: Lamas
+    given-names: Patrick B.
+    affiliation: "University of Sao Paulo, Sao Carlos School of Engineering"
+  - family-names: Nicoletti
+    given-names: Rodrigo
+    affiliation: "University of Sao Paulo, Sao Carlos School of Engineering"
+keywords:
+  - rotordynamics
+  - wave propagation
+  - band gap
+  - periodic structures
+  - Bloch-Floquet
+references:
+  - type: article
+    title: "Wave analysis of rotors with longitudinal periodicity"
+    authors:
+      - family-names: Lamas
+        given-names: Patrick B.
+      - family-names: Nicoletti
+        given-names: Rodrigo
+    journal: "Journal of Sound and Vibration"
+    volume: 571
+    start: 118095
+    year: 2024
+    doi: 10.1016/j.jsv.2023.118095
