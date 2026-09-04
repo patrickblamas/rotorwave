@@ -3,8 +3,7 @@
 [![tests](https://github.com/patrickblamas/rotorwave/actions/workflows/tests.yml/badge.svg)](https://github.com/patrickblamas/rotorwave/actions/workflows/tests.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-<!-- After archiving on Zenodo, paste the DOI badge here:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/1357576324.svg)](https://doi.org/10.5281/zenodo.22311180)
 
 **Wave propagation analysis of rotors with longitudinal periodicity, in Python.**
 
